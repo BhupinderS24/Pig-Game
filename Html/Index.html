@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <title>Pig Game</title>
+        <script type="text/javascript" src="../Javascript/Operations.js"></script>
+        <link rel="stylesheet" href="../Css/Style.css">
+    </head>
+<body>
+    <div class="container">
+        <div class="PlayerContainer">
+        <div class="player0">
+            <div class="PermScore0" style="text-align: center;">
+                <div class="playerName" id="name0">PLAYER 1</div>
+                <div class="playerScore" style="padding-top: 20px;" id="score0"></div>
+            </div>
+            <div class="playerBox0">
+                <div class="playerLabel">CURRENT</div>
+                <div class="playerscore currentScore" id=playerscore0></div>
+            </div>
+        </div>
+        <div class="player1">
+            <div class="PermScore1" style="text-align: center;">
+                <div class="playerName" id="name1">PLAYER 2</div>
+                <div class="playerScore" style="padding-top: 20px;" id="score1"></div>
+            </div>
+            <div class="playerBox1">
+                <div class="playerLabel">CURRENT</div>
+                <div class="playerscore currentScore" id=playerscore1></div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <button id= BRoll class="btn-roll customBRoll" onclick="Roll()"><i class="ion-ios-loop customIcon"></i>ROLL DICE</button>
+        <button id=BHold class="btn-hold customBHold" onclick="hold()"><i class="ion-ios-download-outline customIcon"></i>HOLD</button>
+        <button class="btn-new customBNew" onclick="newGame()"><i class="ion-ios-plus-outline customIcon"></i>NEW GAME</button>
+        <img id="diceImage" src="" alt="Dice" class="dice">
+    </div>
+    <div id="RollDice"></div>
+</body>
+</html>
